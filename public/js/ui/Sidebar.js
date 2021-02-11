@@ -22,9 +22,8 @@ class Sidebar {
     const sandwichBtn = document.querySelector('.sidebar-toggle');
 
       sandwichBtn.addEventListener('click', (e)=> {
-        console.log(1)
-        body.classList.toggle('sidebar-open sidebar-collapse');
-        
+        body.classList.toggle('sidebar-open');
+        body.classList.toggle('sidebar-collapse');
         e.preventDefault();
       })
   }
@@ -38,11 +37,17 @@ class Sidebar {
    * */
   static initAuthLinks() {
     const sideBarBtn = document.getElementsByClassName('menu-item');
-    
+
     Array.from(sideBarBtn).forEach((item) => {
-      if (item.classList.contains('menu-item_login')) {
-        console.log(1);
-      }
+      item.addEventListener('click', ()=> {
+        if (item.classList.contains('menu-item_login')) {
+          App.getModal('login').open();
+        } else if (item.classList.contains('menu-item_register')) {
+          App.getModal('register').open();
+        } else if (item.classList.contains('menu-item_logout')) {
+          //сюда дописать logout
+        }
+      })
     })
 
   }
