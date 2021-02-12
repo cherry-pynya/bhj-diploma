@@ -8,47 +8,55 @@ const createRequest = (options = {}) => {
             url = '',
             method = 'GET',
             callback = f,
-            responseType,
+            responseType = '',
             async = true,
             data = {}
         } = options,
-        xhr = new XMLHttpRequest;
-        if (method === 'GET') {
-            let str;
-            for (item in data) {
-                str += item + '=' + data.item + '&' ;
-            }
 
-            try {
-                xhr.open(method, (url+str.slice(0, -1)));
-                xhr.responseType = responseType;
-                xhr.send();
-            } catch(err) {
-                callback(err);
-            }
-        } else {
-            let formData = new FormData();
-            for (item in data) {
-                formData.append(item, data.item);
-            }
+   
+    xhr = new XMLHttpRequest;
 
-            try {
-                xhr.open(method, url);
-                xhr.withCredentials = true;
-                xhr.responseType = responseType;
-                xhr.send(formData);
-            } catch(err) {
-                callback(err)
-            }
+    if (method === 'GET') {
+        let params = '';
+        for (param in data) {
+            params += param + '=' + data[param] + '&';
         }
 
-        xhr.addEventListener('readystatechange', ()=> {
-            if (xhr.readyState === xhr.DONE && xhr.status === 200) {
-                if (!xhr.response.success) {
-                    callback(xhr.response.error, xhr.response);
-                } else {
-                    callback(null, xhr.response);
-                }
+        try {
+            xhr.open(method, url + '/?' + params.slice(0, -1), async);
+            xhr.setRequestHeader('Content-type', headers['Content-type']);
+            xhr.responseType = responseType;
+            xhr.withCredentials = true;
+            xhr.send();
+        } catch (err) {
+            callback(err);
+        }
+    } else {
+        const formData = new FormData;
+        for (param in data) {
+            formData.append(param, data[param]);
+        }
+
+        try {
+            xhr.open(method, url);
+            xhr.responseType = responseType;
+            xhr.withCredentials = true;
+            xhr.send(formData);
+        } catch (err) {
+            callback(err);
+        }
+    }
+
+    xhr.addEventListener('readystatechange', () => {
+        if (xhr.readyState === xhr.DONE && xhr.status == 200) {
+
+            if (!xhr.response.success) {
+                callback(xhr.response.error, xhr.response);
+            } else {
+                callback(null, xhr.response);
             }
-        })
+
+        }
+    });
+
 };

@@ -45,7 +45,8 @@ class Sidebar {
         } else if (item.classList.contains('menu-item_register')) {
           App.getModal('register').open();
         } else if (item.classList.contains('menu-item_logout')) {
-          //сюда дописать logout
+          User.logout(User.current());
+          App.setState( 'init' )
         }
       })
     })
