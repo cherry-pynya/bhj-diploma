@@ -23,6 +23,18 @@
       "email": "fghfghfgh@dfgfdgdgdf.ru",
       "password": "fghrhrthrthrh",
       "id": "2cbtlkdgskl2qzq4q"
+    },
+    {
+      "name": "Никита Черепня",
+      "email": "nikiche93@yandex.ru",
+      "password": "demo",
+      "id": "2cbtlkd7qokl6qsznd"
+    },
+    {
+      "name": "jon",
+      "email": "ivan@demo.ru",
+      "password": "demo",
+      "id": "2cbtlkd9yokl9gagrc"
     }
   ],
   "accounts": [
@@ -40,6 +52,81 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "пончики",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkd3j8kl3s4952"
+    },
+    {
+      "name": "vbvb",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkda7kkl3s6q61"
+    },
+    {
+      "name": "donuts",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkd8rwkl6n5fis"
+    },
+    {
+      "name": "Никита",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkd7uskl6qkul3"
+    },
+    {
+      "name": "'\\'\\",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkd9kwkl6ql17x"
+    },
+    {
+      "name": "'\\'\\'\\'\\'",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkd9w8kl6ql4tp"
+    },
+    {
+      "name": "ooioio",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkdb7okl6qpbgg"
+    },
+    {
+      "name": "dfdf",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkdewkl6qsauo"
+    },
+    {
+      "name": "ghgh",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "id": "2cbtlkd218kl6qxfz1"
+    },
+    {
+      "name": "fhjfgjfghjghj",
+      "user_id": "2cbtlkd8i4kl2q2xn3",
+      "id": "2cbtlkd1k0kl6r0n8w"
+    },
+    {
+      "name": "vfsdgfgfdgfdgfdgdfgdfgdfg",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "id": "2cbtlkd3iwkl6r3gb6"
+    },
+    {
+      "name": "boooooooooooo",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "id": "2cbtlkdbrwkl6r453i"
+    },
+    {
+      "name": "батареи",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "id": "2cbtlkd7jkkl6rfpko"
+    },
+    {
+      "name": "dfdffdf",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "id": "2cbtlkd44gkl6riaoy"
+    },
+    {
+      "name": "budget",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "id": "2cbtlkd6c8kl9gaqbf"
     }
   ],
   "transactions": [
@@ -177,6 +264,231 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "2cbtlkd1i8kl72z7tr",
+      "type": "income",
+      "name": "батареи",
+      "sum": 1221323,
+      "account_id": "2cbtlkd7jkkl6rfpko",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:19:36.542Z"
+    },
+    {
+      "id": "2cbtlkd62ckl7302y7",
+      "type": "income",
+      "name": "батареи",
+      "sum": 1221323,
+      "account_id": "2cbtlkd7jkkl6rfpko",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:20:16.878Z"
+    },
+    {
+      "id": "2cbtlkd4bwkl7313hh",
+      "type": "income",
+      "name": "Никита Черепня",
+      "sum": 1221323,
+      "account_id": "2cbtlkdbrwkl6r453i",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:21:04.228Z"
+    },
+    {
+      "id": "2cbtlkd7tgkl737pek",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkd218kl6qxfz1",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:26:12.571Z"
+    },
+    {
+      "id": "2cbtlkd4vokl73chqm",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkd218kl6qxfz1",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:29:55.917Z"
+    },
+    {
+      "id": "2cbtlkd3kkl73e5rt",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkd218kl6qxfz1",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:31:13.720Z"
+    },
+    {
+      "id": "2cbtlkdz0kl73egvu",
+      "type": "expense",
+      "name": "Никита Черепня",
+      "sum": 1221323,
+      "account_id": "2cbtlkd218kl6qxfz1",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:31:28.121Z"
+    },
+    {
+      "id": "2cbtlkd5lokl73esvp",
+      "type": "expense",
+      "name": "Никита Черепня",
+      "sum": 1221323,
+      "account_id": "2cbtlkd7jkkl6rfpko",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:31:43.668Z"
+    },
+    {
+      "id": "2cbtlkd42skl73ez9u",
+      "type": "income",
+      "name": "Никита Черепня",
+      "sum": 1221323,
+      "account_id": "2cbtlkdbrwkl6r453i",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:31:51.953Z"
+    },
+    {
+      "id": "2cbtlkd6iskl73fkvb",
+      "type": "expense",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkdbrwkl6r453i",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:32:19.942Z"
+    },
+    {
+      "id": "2cbtlkddgkl73gnwg",
+      "type": "expense",
+      "name": "Никита Черепня",
+      "sum": 1221323,
+      "account_id": "2cbtlkd7jkkl6rfpko",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:33:10.527Z"
+    },
+    {
+      "id": "2cbtlkd2xokl73izum",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkdbrwkl6r453i",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:34:59.325Z"
+    },
+    {
+      "id": "2cbtlkd6qskl73j3nd",
+      "type": "expense",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkdbrwkl6r453i",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-15T21:35:04.248Z"
+    },
+    {
+      "id": "2cbtlkd55gkl88djl8",
+      "type": "expense",
+      "name": "Никита",
+      "sum": 1221323,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:38:29.227Z"
+    },
+    {
+      "id": "2cbtlkd850kl88duf9",
+      "type": "expense",
+      "name": "fghghg",
+      "sum": 100000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:38:43.268Z"
+    },
+    {
+      "id": "2cbtlkd70okl88e42o",
+      "type": "expense",
+      "name": "Никита",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:38:55.775Z"
+    },
+    {
+      "id": "2cbtlkd394kl88eb8y",
+      "type": "expense",
+      "name": "boooooooooooo",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:39:05.073Z"
+    },
+    {
+      "id": "2cbtlkd7cwkl88ekn1",
+      "type": "expense",
+      "name": "Никита",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:39:17.244Z"
+    },
+    {
+      "id": "2cbtlkd78skl88erhl",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:39:26.120Z"
+    },
+    {
+      "id": "2cbtlkd738kl88exlr",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:39:34.046Z"
+    },
+    {
+      "id": "2cbtlkd4j4kl88f3p8",
+      "type": "income",
+      "name": "Никита",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:39:41.947Z"
+    },
+    {
+      "id": "2cbtlkd4mgkl88facc",
+      "type": "expense",
+      "name": "sdsd",
+      "sum": 1000000,
+      "account_id": "2cbtlkd3iwkl6r3gb6",
+      "user_id": "2cbtlkd7qokl6qsznd",
+      "created_at": "2021-02-16T16:39:50.555Z"
+    },
+    {
+      "id": "2cbtlkd5i8kl9gawp8",
+      "type": "income",
+      "name": "g",
+      "sum": 1000,
+      "account_id": "2cbtlkd6c8kl9gaqbf",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-17T13:08:09.355Z"
+    },
+    {
+      "id": "2cbtlkd5o4kl9hqjbc",
+      "type": "income",
+      "name": "hgjhj",
+      "sum": 10000,
+      "account_id": "2cbtlkd2sckl9hpnk9",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-17T13:48:18.119Z"
+    },
+    {
+      "id": "2cbtlkd85ckl9hqqz8",
+      "type": "expense",
+      "name": "Никита",
+      "sum": 1000,
+      "account_id": "2cbtlkd2sckl9hpnk9",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-17T13:48:28.051Z"
     }
   ]
 }

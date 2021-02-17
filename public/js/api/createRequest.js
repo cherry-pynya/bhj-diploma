@@ -24,7 +24,6 @@ const createRequest = (options = {}) => {
 
         try {
             xhr.open(method, url + '/?' + params.slice(0, -1), async);
-            xhr.setRequestHeader('Content-type', headers['Content-type']);
             xhr.responseType = responseType;
             xhr.withCredentials = true;
             xhr.send();
@@ -32,9 +31,10 @@ const createRequest = (options = {}) => {
             callback(err);
         }
     } else {
-        const formData = new FormData;
-        for (param in data) {
-            formData.append(param, data[param]);
+        let formData = new FormData();
+
+        for (let item in data) {
+            formData.append(item, data[item]);
         }
 
         try {
@@ -49,7 +49,6 @@ const createRequest = (options = {}) => {
 
     xhr.addEventListener('readystatechange', () => {
         if (xhr.readyState === xhr.DONE && xhr.status == 200) {
-
             if (!xhr.response.success) {
                 callback(xhr.response.error, xhr.response);
             } else {

@@ -49,7 +49,6 @@ class AsyncForm {
         for (let item of entries) {
             formFields[item[0]] = item[1];
         }
-        console.log(formFields)
         return formFields;
  
 

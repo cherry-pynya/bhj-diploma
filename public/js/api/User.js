@@ -31,6 +31,7 @@ class User {
    * */
   static current() {
     if (localStorage.getItem('user') !== null) {
+      console.log(1);
       return JSON.parse(localStorage.getItem('user'));
     } else {
       return undefined;
@@ -41,14 +42,14 @@ class User {
    * Получает информацию о текущем
    * авторизованном пользователе.
    * */
-  static fetch(callback = (f) => f) {
+  static fetch(callback) {
     createRequest({
       url: this.URL + `/current`,
       method: "GET",
       responseType: "json",
       callback: (err, response) => {
-        if (response.success) {
-          console.log(response.user)
+        if (response && response.user) {
+          console.log(response.user);
           this.setCurrent(response.user);
         } else {
           this.unsetCurrent();
@@ -68,7 +69,7 @@ class User {
    * сохранить пользователя через метод
    * User.setCurrent.
    * */
-  static login( data, callback = (f) => f) {
+  static login( data, callback) {
     try {
       createRequest({
         url: this.URL + '/login',
@@ -95,7 +96,7 @@ class User {
    * сохранить пользователя через метод
    * User.setCurrent.
    * */
-  static register( data, callback = (f) => f) {
+  static register( data, callback) {
     try {
       createRequest({
         url: this.URL + `/register`,
@@ -119,7 +120,7 @@ class User {
    * Производит выход из приложения. После успешного
    * выхода необходимо вызвать метод User.unsetCurrent
    * */
-  static logout( data, callback = (f) => f) {
+  static logout( data, callback) {
     createRequest({
       url: `${this.URL}/logout`,
       method: 'POST',

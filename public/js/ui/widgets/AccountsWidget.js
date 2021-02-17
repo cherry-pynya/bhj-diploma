@@ -64,13 +64,16 @@ class AccountsWidget {
     }
     Account.list(User.current(), (err, response) => {
       if (err){
+
         return;
       }
       if (!response.data){
+
         return;
       }
       this.clear();
       this.renderItem(response.data);
+
     });
   }
 

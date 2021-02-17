@@ -10,12 +10,12 @@ class Entity {
    * Это могут быть счета или доходы/расходы
    * (в зависимости от того, что наследуется от Entity)
    * */
-  static list(data, callback = (f) => f){
+  static list(data, callback){
     createRequest({
       url: this.URL,
       method: 'GET',
       responseType: 'json',
-      data: data,
+      data,
       callback
     })
 
@@ -26,12 +26,12 @@ class Entity {
    * на сервер. (в зависимости от того,
    * что наследуется от Entity)
    * */
-  static create(data, callback = (f) => f) {
+  static create(data, callback) {
     createRequest({
       url: this.URL,
       method: 'PUT',
       responseType: 'json',
-      data: data,
+      data,
       callback
     })
   }
@@ -40,12 +40,12 @@ class Entity {
    * Удаляет информацию о счёте или доходе/расходе
    * (в зависимости от того, что наследуется от Entity)
    * */
-  static remove(data, callback = (f) => f ) {
+  static remove(id, callback) {
     createRequest({
       url: this.URL,
       method: 'DELETE',
       responseType: 'json',
-      data: data,
+      data: {id},
       callback
     })
   }
