@@ -122,11 +122,6 @@
       "name": "dfdffdf",
       "user_id": "2cbtlkd7qokl6qsznd",
       "id": "2cbtlkd44gkl6riaoy"
-    },
-    {
-      "name": "budget",
-      "user_id": "2cbtlkd9yokl9gagrc",
-      "id": "2cbtlkd6c8kl9gaqbf"
     }
   ],
   "transactions": [
@@ -489,6 +484,51 @@
       "account_id": "2cbtlkd2sckl9hpnk9",
       "user_id": "2cbtlkd9yokl9gagrc",
       "created_at": "2021-02-17T13:48:28.051Z"
+    },
+    {
+      "id": "2cbtlkd9f8kl9nundc",
+      "type": "expense",
+      "name": "партаптрпатпроьп",
+      "sum": 1000,
+      "account_id": "2cbtlkd6c8kl9gaqbf",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-17T16:39:27.695Z"
+    },
+    {
+      "id": "2cbtlkd8f0klicsj24",
+      "type": "income",
+      "name": "bnbn",
+      "sum": 1000,
+      "account_id": "2cbtlkd6c8kl9gaqbf",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-23T18:39:48.603Z"
+    },
+    {
+      "id": "2cbtlkd3h0klicsro7",
+      "type": "expense",
+      "name": "gg",
+      "sum": 1000,
+      "account_id": "2cbtlkd6c8kl9gaqbf",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-23T18:39:59.766Z"
+    },
+    {
+      "id": "2cbtlkd4b8klif0bcd",
+      "type": "income",
+      "name": "gfgfgfg",
+      "sum": 100000,
+      "account_id": "2cbtlkd7t0kliezzvy",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-23T19:41:51.084Z"
+    },
+    {
+      "id": "2cbtlkd3wgklif0g8j",
+      "type": "expense",
+      "name": "fgfgfg",
+      "sum": 10000,
+      "account_id": "2cbtlkd91gklif070n",
+      "user_id": "2cbtlkd9yokl9gagrc",
+      "created_at": "2021-02-23T19:41:57.426Z"
     }
   ]
 }

@@ -16,6 +16,7 @@ class TransactionsPage {
     }
     this.element = element;
     this.registerEvents();
+    this.lastOptions = false;
   }
 
 
@@ -35,22 +36,42 @@ class TransactionsPage {
    * */
   registerEvents() {
     const btn = document.getElementsByClassName('btn-danger');
-    Array.from(btn).forEach((i)=>{
-      if (i.classList.contains('remove-account')) {
-        i.addEventListener('click', (e)=> {
-          e.preventDefault();
 
-          this.removeAccount();
-        })
-      } else if (i.classList.contains('transaction__remove')) {
-        i.addEventListener('click',()=>{
-
-          let id = i.dataset.id;
-          console.log(id);
-          this.removeTransaction(id);
-        })
-      }
-    })
+    if (!this.lastOptions) {
+      Array.from(btn).forEach((i)=>{
+        if (i.classList.contains('remove-account')) {
+          i.addEventListener('click', (e)=>{
+            e.preventDefault();
+            this.removeAccount();
+          })
+        }
+      })
+    } else {
+      Array.from(btn).forEach((i)=>{
+        if (i.classList.contains('transaction__remove')) {
+          i.addEventListener('click', ()=>{
+            let id = i.dataset.id;
+            this.removeTransaction(id);
+          })
+        }
+      })
+    }
+    //Array.from(btn).forEach((i)=>{
+    //  if (i.classList.contains('remove-account')) {
+    //    i.addEventListener('click', (e)=> {
+    //      e.preventDefault();
+//
+    //      this.removeAccount();
+    //    })
+    //  } else if (i.classList.contains('transaction__remove')) {
+    //    i.addEventListener('click',()=>{
+//
+    //      let id = i.dataset.id;
+    //      console.log(id);
+    //      this.removeTransaction(id);
+    //    })
+    //  }
+    //})
   }
 
   /**
@@ -64,13 +85,17 @@ class TransactionsPage {
   removeAccount() {
     if (!this.lastOptions) {
       return false
-    }
-    console.log(this.lastOptions)
-    if (window.confirm("Ты уверен?")) {
-        Account.remove(this.lastOptions.account_id,(err, response)=>{
+    } else {
+      console.log(this.lastOptions);
+      let id = this.lastOptions.account_id
+      let obj = {id};
+      console.log(obj);
+      if (window.confirm("Ты уверен?")) {
+        Account.remove(obj,(err, response)=>{
         this.clear();
         App.update();
       })
+      }
     }
   }
 
@@ -81,8 +106,11 @@ class TransactionsPage {
    * */
   removeTransaction( id ) {
     
+    let obj = {id};
+    console.log(obj);
     if (window.confirm("Ты уверен?")) {
-      Transaction.remove(id,(err, response)=>{
+      Transaction.remove(obj,(err, response)=>{
+
         if (response.success) {
           App.update();
         }
@@ -133,7 +161,7 @@ class TransactionsPage {
     let data = [];
     this.renderTransactions(data); 
     this.renderTitle('Название счета');
-    this.lastOptions = '';
+    this.lastOptions = false;
   }
 
   /**
